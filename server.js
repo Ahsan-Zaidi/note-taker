@@ -9,7 +9,20 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const readFile = () => {
-    
+    return JSON.parse(fs.readFileSync("./db/db.json", "utf-8", err => {
+        if (err) {
+            console.log(err);
+        }
+    }));
+}
+
+const writeFile = () => {
+    fs.writeFileSync('./db/db.json', JSON.stringify(file), err => {
+        if (err) {
+            console.log(err);
+        }
+    });
+    return file;
 }
 
 app.post('/api/notes', (req, res) => {
