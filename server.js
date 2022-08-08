@@ -3,10 +3,12 @@ const fs = require("fs");
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 
-const app = express();
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+const app = express();
+const PORT = process.env.PORT || 3001;
 
 const readFile = () => {
     return JSON.parse(fs.readFileSync("./db/db.json", "utf-8", err => {
@@ -42,6 +44,6 @@ app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/notes.html'));
 });
 
-app.listen(3001, () => {
-    console.log(`API server now on port 3001`);
+app.listen(PORT, () => {
+    console.log(`API server now on port ${PORT}`);
 });
