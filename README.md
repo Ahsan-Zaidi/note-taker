@@ -8,7 +8,7 @@
 🔍This entire application is deployed to Heroku. To get this project up and running, you can follow the deployment link. Or, clone the repository from GitHub to use this as a template.
 
 * [GitHub Repository](https://github.com/Ahsan-Zaidi/note-taker)
-* [Deployed Application]
+* [Deployed Application] ()
 
 # Table of Contents
 * [Demo](#demo)
@@ -40,7 +40,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 
 
 # Demo :
-![Note Taker]
+![Note Taker] (note-taker/assets/images/note-takerdemo.gif)
 
 # Technology :
 
