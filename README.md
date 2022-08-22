@@ -8,7 +8,7 @@
 🔍This entire application is deployed to Heroku. To get this project up and running, you can follow the deployment link. Or, clone the repository from GitHub to use this as a template.
 
 * [GitHub Repository](https://github.com/Ahsan-Zaidi/note-taker)
-* [Deployed Application] ()
+* [Deployed Application] (https://note-takers01.herokuapp.com/)
 
 # Table of Contents
 * [Demo](#demo)
